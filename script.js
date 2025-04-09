@@ -7,7 +7,7 @@ function encriptar(text, key) {
       let base = symbol === symbol.toUpperCase() ? 65 : 97;
       let newCode = ((Code - base + key) % 26) + base;
 
-      encriptedText += String.fromChartCode(newCode);
+      encriptedText += String.fromCharCode(newCode);
     } else {
       encriptedText += symbol;
     }
